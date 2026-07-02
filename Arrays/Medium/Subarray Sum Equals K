@@ -1,0 +1,18 @@
+class Solution(object):
+    def subarraySum(self, nums, k):
+        
+        prefixsumcount={}
+        n=len(nums)
+        prefixsum=0
+        count=0
+        prefixsumcount[0]=1
+
+        for i in range(n):
+            prefixsum+=nums[i]
+            remove=prefixsum - k
+            if remove in prefixsumcount:
+                count+=prefixsumcount[remove]
+            prefixsumcount[prefixsum]=prefixsumcount.get(prefixsum,0)+1
+        
+        return count
+        
