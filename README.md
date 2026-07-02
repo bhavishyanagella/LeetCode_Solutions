@@ -9,4 +9,5 @@
 - Arrays
 
 ## Total Problems Solved
-15
+Arrays : 23
+Binary Search : 13
