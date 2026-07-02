@@ -6,7 +6,7 @@
 
 ## Topics Covered
 - Binary Search
-- SQL
+- Arrays
 
 ## Total Problems Solved
 15
