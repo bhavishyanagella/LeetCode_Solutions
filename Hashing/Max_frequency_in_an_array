@@ -1,0 +1,10 @@
+def funn(s):
+    n = len(s)
+    mp={}
+    for i in range(n):
+        if s[i].isalpha():
+            mp[s[i]] = mp.get(s[i],0)+1
+    return max(mp.values())
+    
+s="a,b,c,d,a,b,e,f"
+print(funn(s))
