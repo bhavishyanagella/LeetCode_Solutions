@@ -1,0 +1,9 @@
+def funn(s,target):
+    n = len(s)
+    mp={}
+    for i in range(n):
+        mp[s[i]] = mp.get(s[i],0)+1
+    return mp.get(target,0)
+    
+s="a,b,c,d,a,b,e,f"
+print(funn(s,'a'))
